@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+.navbar {
+  background-color: white;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 43px;
+  margin-right: 10px;
+}
+
+.logo-text {
+  font-size: 28px;
+  color: black;
+  font-weight: bolder;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+.nav-links a {
+  color: black; 
+  text-decoration: none;
+  margin: 0 20px;
+  font-size: 18px;
+  font-family: Poppins;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container img {
+  height: 30px;
+  margin: 0 10px;
+}
+
+.background-image {
+  position: relative;
+  width: 1440px;
+  height: 900.93px;
+  flex-shrink: 0;
+  background-image: url('Assets/fimg.jpg');
+  background-size: 1440px 1007.93px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.content-box {
+  position: absolute;
+  width: 643px;
+  height: 390px;
+  top: 20%;
+  left: 50%;
+  background-color: #FFF3E3;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.content-box h1 {
+  margin-right: 450px;
+  font-size: 20px;
+  font-family: Poppins;
+  color: black;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+.content-box h2 {
+    margin-right: 450px;
+    font-size: 52px;
+    font-family: Poppins;
+    color: black;
+    width: 400px;
+    margin-bottom: 10px;
+  }
+.content-box p {
+  font-size: 18px;
+  color: black;
+}
