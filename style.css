@@ -199,7 +199,7 @@ body {
 }
 
 .product {
-  flex: 0 0 calc(25% - 10px); /* Makes 4 products in one row with some spacing */
+  flex: 0 0 calc(25% - 10px);
   text-align: center;
   padding: 20px;
   border: 1px solid #ddd;
@@ -227,12 +227,132 @@ body {
 
 .product p {
   font-size: 16px;
-  color: black;
+  color:#B88E2F;
   margin-bottom: 10px;
 }
 
 .product-price {
   font-size: 18px;
   font-weight: bold;
-  color: #B88E2F;
+  color: black;
 }
+
+body, h1, h2, h3, h4, p, a, button {
+  margin: 0;
+  padding: 0;
+  font-family: poppins;
+  text-decoration: none;
+}
+
+.product .add-to-cart {
+  background-color:white;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s, background-color 0.3s;
+}
+
+.product:hover .add-to-cart {
+  opacity: 1;
+}
+
+
+.product {
+  flex: 0 0 calc(25% - 20px); 
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  position: relative; 
+  transition: transform 0.3s;
+}
+
+.product:hover {
+  background-color: rgba(0, 0, 0, 0.6); 
+  transform: translateY(-5px);
+}
+
+
+@media (max-width: 768px) {
+  .product {
+    flex: 0 0 calc(50% - 20px); 
+  }
+}
+
+body, h1, h2, h3, h4, p, a, button {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  text-decoration: none;
+}
+
+
+.about-section {
+  display: flex;
+  padding: 40px 0;
+}
+
+.about-text {
+  font-family: poppins;
+  flex: 40%;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+.about-text h3 {
+  font-size: 44px;
+  font-weight: ;
+  margin-bottom: 10px;
+  margin-left: 40px;
+  margin-top: 100px;
+  font-family: poppins;
+  font-weight: 700;
+line-height: 120%; 
+}
+
+.about-text p {
+  font-size: 16px;
+  color: #555;
+  font-family: poppins;
+  margin-left: 40px;
+}
+
+.about-images {
+  flex: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.about-images img {
+  max-width: 45%;
+  border-radius: 5px;
+}
+.about-text .btn2 {
+  background-color: #B88E2F;
+   font-weight: bold;
+   float: left;
+   margin-left: 20px;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 19px;
+  height: 48px;
+  width: 176px;
+  margin-top: 20px;
+  margin-left: 40px;
+  
+}
+
+.about-text .btn2:hover {
+  background-color: #956d21;
+}
+
