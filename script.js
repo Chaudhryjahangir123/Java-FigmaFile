@@ -14,11 +14,3 @@ buttons.forEach(button => {
     });
 });
 
-
-const addToCartParagraphs = document.querySelectorAll(".add-to-cart");
-addToCartParagraphs.forEach(paragraph => {
-    paragraph.addEventListener("click", () => {
-        const productName = paragraph.dataset.productName;
-        addToCart(productName);
-    });
-});
