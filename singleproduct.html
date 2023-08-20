@@ -22,7 +22,7 @@
         <img src="Assets/alert.png" alt="Logo 1" />
         <img src="Assets/search.png" alt="Logo 2" />
         <img src="Assets/heart.png" alt="Logo 3" />
-        <img src="Assets/shopcart.png" alt="Logo 4" />
+        <img src="Assets/shopcart.png" alt="Shopcart Logo" />
       </div>
     </div>
     <div class="smallline">
@@ -35,26 +35,69 @@
         <img src="Assets/ad1.png" alt="Product 1" />
       </div>
       <div class="product-info">
-        <h1>Syltherine</h1>
+        <h1><span>Syltherine</span></h1>
         <p class="product-price">$99.99</p>
         <p>Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.
 
         </p>
-        <p>Sizes available: S, M, L</p>
-        <div class="product-colors">
-          <div class="color-circle" style="background-color: red"></div>
-          <div class="color-circle" style="background-color: green"></div>
-          <div class="color-circle" style="background-color: blue"></div>
+        <div class="product-sizes">
+          <span>Select Size: </span>
+          <button class="size-button active">S</button>
+          <button class="size-button">M</button>
+          <button class="size-button">L</button>
         </div>
+        
+        <div class="product-colors">
+          <span>Select Color: </span>
+          <button class="color-button" style="background-color: gray"></button>
+<button class="color-button" style="background-color: cornflowerblue"></button>
+<button class="color-button" style="background-color: sienna"></button>
+
+        </div>
+        
         <div class="product-quantity">
+          <span>Quantity: </span>
           <button class="minus-button">-</button>
           <input type="text" class="quantity-input" value="1" />
           <button class="plus-button">+</button>
         </div>
         <button class="add-to-cart-button">Add to Cart</button>
-        <button class="compare-button">Compare</button>
+        <a href="comparison.html"><button class="compare-button">Compare</button></a>
       </div>
-    </div><hr>
+    </div>
+    <div class="our-products">
+      <h3 class="products-title">Related Products</h3>
+      <div class="product-boxes">
+        <div class="product">
+          <img src="Assets/ad1.png" alt="Product 1" />
+          <h4>Syltherine</h4>
+          <p>Short description about Product 1.</p>
+          <p class="product-price">$99.99</p>
+          <div class="add-to-cart" data-product-name="Syltherine">
+            <p>Add to Cart</p>
+          </div>
+        </div>
+        <div class="product">
+          <img src="Assets/ad2.png" alt="Product 2" />
+          <h4>Leviosa</h4>
+          <p>Short description about Product 2.</p>
+          <p class="product-price">$129.99</p>
+          <div class="add-to-cart" data-product-name="Leviosa">
+            <p>Add to Cart</p>
+          </div>
+        </div>
+        <div class="product">
+          <img src="Assets/ad3.png" alt="Product 3" />
+          <h4>Lolito</h4>
+          <p>Short description about Product 3.</p>
+          <p class="product-price">$89.99</p>
+          <div class="add-to-cart" data-product-name="Lolito">
+            <p>Add to Cart</p>
+          </div>
+        </div>
+    </div>
+    
+    <hr>
     <div class="footer">
         <div class="footer-content">
           <div class="contact-info">
@@ -63,8 +106,8 @@
           </div>
           <div class="button-groups">
             <div class="button-group1">
-              <a href="#" class="button">Home</a>
-              <a href="#" class="button">Shop</a>
+              <a href="index.html" class="button">Home</a>
+              <a href="shop.html" class="button">Shop</a>
               <a href="#" class="button">About</a>
               <a href="#" class="button">About</a>
               <a href="#" class="button">About</a>
@@ -85,5 +128,6 @@
         <div class="line">
         <p>&copy; 2023 Furniro. All rights reserved.</p>
       </div>
+      <script src="script.js"></script>
   </body>
 </html>
